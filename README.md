@@ -1,6 +1,8 @@
 # GPT_CLI
 A simple Hacky way to run ChatGPT in CLI without an API key headless
 
+( This is a simple hobby project most probaly will be updated soon with more bug fixes )
+
 # Instructions to Install Playwright
 
 This guide assumes you already have Python with pip installed.
