@@ -31,8 +31,9 @@ async def process_input(page, existing_output):
                     text_without_gpt = re.sub(r'\b(chatgpt)\b', '', text, flags=re.IGNORECASE)
                     print(text_without_gpt.strip())
             else:
-                # if time.time() - start_time <= 1:  # Print this message if it's the first check
+                if time.time() - start_time <= 1:  # Print this message if it's the first check
                 #     print("No new output found.")
+                    print()
                 await page.wait_for_timeout(3000)
             if time.time() - start_time > 20:
                 print("Timeout reached. Exiting.")
